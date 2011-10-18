@@ -1,4 +1,12 @@
 Vss::Application.routes.draw do
+  get "pages/about"
+
+  get "pages/help"
+
+  get "pages/contactus"
+
+  get "pages/copyright"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
