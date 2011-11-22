@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VSS | <%= @title %></title>
+    <title><%= title %></title>
+    <%= csrf_meta_tag %>
+    <%= render 'layouts/stylesheets' %>
   </head>
-<body>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-  <%= yield %>
+  <body>
+   	 
+
+      <%= render 'layouts/header' %>	
+     
+
+      <%= yield %>
+     
+ 
+      <%= render 'layouts/footer' %>
+
+	
   </body>
 </html>
 

@@ -1,0 +1,22 @@
+#myAccordion {
+width:600px; border:1px solid #636363; padding-bottom:1px;
+}
+.ui-accordion-header {
+border:1px solid #fff;
+font-family:Georgia; background:#e2e2e2 none;
+}
+.ui-widget-content { font-size:70%; border:none; }
+.ui-corner-bottom {
+-moz-border-radius:4px 4px 0 0;
+-webkit-border-radius:4px 4px 0 0;
+border-radius:4px 4px 0 0;
+}
+.ui-corner-all {
+-moz-border-radius:0; -webkit-border-radius:0;
+border-radius:0;
+}
+.ui-accordion .ui-accordion-header { margin:0 0 -1px; }
+#myAccordion .ui-state-active, #myAccordion .ui-widget-content .ui-state-active { background:#fff; }
+.ui-state-hover, .ui-widget-content .ui-state-hover {
+background:#d2d2d2;
+}

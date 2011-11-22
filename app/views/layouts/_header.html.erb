@@ -1,0 +1,45 @@
+<header>
+	<div class="tool">	
+		<div class="tool-inner">
+			<div class="inner">
+				<div class="logo">
+					<a href="/">
+					<img  HEIGHT="60" WIDTH="100" src="images/think.gif" alt="Logo-tm">				
+					</a>
+				</div>	
+				<div class="tool-nav">
+						<ul>	
+							<li class="">
+								<a href="/products">Products</a>
+							</li>
+							<li class="">
+								<a href="/tour">Tour</a>
+							</li>
+							<li class="">
+								<a href="/resources">Resources</a>
+							</li>
+							<li class="sub ">
+								<a href="/community">Community</a>
+							</li>
+							<li class="sub">
+								<a href="/blog">Blog</a>
+							</li>
+							<li class="sub ">
+								<a href="/demo">Demo</a>
+							</li>
+
+						</ul>	
+				</div>
+			</div>			
+		<div>	
+	</div>	
+	<div class="clear"></div>
+</header>
+<div class="flash">
+	<% if flash[:notice] %>
+	  <div class="flash-inner notice"><%= flash[:notice] %></div>
+    <% end %>
+    <% if flash[:error] %>
+      <div class="flash-inner alert"><%= flash[:error] %></div>
+    <% end %>
+</div>

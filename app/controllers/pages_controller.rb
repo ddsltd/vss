@@ -15,4 +15,6 @@ class PagesController < ApplicationController
     @title = "Copyright"
   end
 
+
+
 end

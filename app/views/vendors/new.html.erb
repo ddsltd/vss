@@ -1,0 +1,76 @@
+<%= form_for(@vendor) do |f| %>
+<div class="full-inner">	
+<div class="page premium">
+<h1>Vendor</h1>
+<%= render 'shared/error_messages', :object => f.object %>
+<%= field_set_tag  do %>
+<ol>
+<div id="myAccordion">
+    <h5><a href="#">Main</a></h5>
+    <div>
+	   <li>
+	    <%= f.label :lgl_nm, "Legal Name" %><br />
+	    <%= f.text_field  :lgl_nm %><br />
+ 	  </li>
+	   <li>
+	    <%= f.label :first_nm, "First Name" %><br />
+	    <%= f.text_field :first_nm %>
+	  </li>
+	  <li>
+	    <%= f.label :last_nm, "Last Name" %><br />
+	    <%= f.text_field :last_nm %>
+	  </li>
+	  <li>
+	    <%= f.label :classification %><br />
+	    <%= f.text_field :classification %>
+	  </li>
+	</div>
+ <h5><a href="#">TIN details</a></h5>
+  <div>	
+  	  <li>
+	    <%= f.label :Tin, "Tin" %><br />
+	    <%= f.text_field :Tin %>
+	  </li>
+	  <li>
+	    <%= f.label :Tin_Typ , "Tin Type" %><br />
+	    <%= f.text_field :Tin_Typ %>
+	  </li>
+  </div>
+ <h5><a href="#">Legal Address</a></h5>
+<div>
+  	  <li>
+	    <%= f.label :lgl_addr1, "Street1" %><br />
+	    <%= f.text_field :lgl_addr1 %>
+	  </li>
+	  <li>
+	    <%= f.label :lgl_addr2, "Street2" %><br />
+	    <%= f.text_field :lgl_addr2 %>
+	  </li>
+	  <li>
+	    <%= f.label :state, "State" %><br />
+	    <%= f.text_field :state %>
+	  </li>
+	  <li>
+	    <%= f.label :city, "City" %><br />
+	    <%= f.text_field :city %>
+	  </li>
+	  <li>
+	    <%= f.label :country, "Country" %><br />
+	    <%= f.text_field :country %>
+	  </li>
+	  <li>
+	    <%= f.label :zip, "Zip" %><br />
+	    <%= f.text_field :zip %>
+	  </li>
+</div>
+</div>
+ <li class="button-item">
+   	<%=  submit_tag "Next" , :class=>"button green"%>		
+   	<%=  submit_tag "Back" , :class=>"button green"%>				
+</li>						
+
+</ol>	
+<% end %>
+</div>
+</div>
+<% end %>

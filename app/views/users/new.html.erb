@@ -1,0 +1,49 @@
+<%= form_for(@user) do |f| %>
+
+<div class="focus">	
+<div class="focus-inner">
+<h1>Sign up</h1>
+<%= render 'shared/error_messages', :object => f.object %>
+<%= field_set_tag  do %>
+<ol>
+  <li>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </li>
+  <li>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </li>
+  <li>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+</li>
+<li>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+</li>
+<li>	
+    <%= f.label :password_confirmation, "Password Confirmation" %>
+    <%= f.password_field :password_confirmation %>
+</li>
+<li>	
+    <div><%= f.label :security_question, "Security question" %></div>
+	<div><%= select(:user, :security_question, [ ['',0],['whats your favorite color', 1], ['Whats your moms maiden name', 2]]) %></div>
+</li>
+<li>	
+    <%= f.label :security_answer %>
+    <%= f.password_field :security_answer %>
+ </li> 
+<li>	
+    <div><%= f.label :security_answer_confirmation, "Answer confirmation" %></div>
+    <%= f.password_field :security_answer %>
+ </li>
+ <li class="button-item">
+    <%=  submit_tag "Sign up" , :class=>"button green"%>
+</li>
+</ol>
+<% end %>
+</div>
+</div>
+
+<% end %>

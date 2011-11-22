@@ -1,0 +1,40 @@
+<%= form_for(:session, :url => sessions_path) do |f| %>
+
+
+<h1>
+	Terms and Conditions
+</h1>
+<p>
+	Please review and accept the terms outlined below to begin activation. If you choose not to accept these terms you will be returned to the Payee Information Portal Homepage.
+</p>	
+<div >
+
+	<h3>
+	<ul>
+	<li>		
+	Your use of this site is subject to our Terms and Conditions.
+	</li>
+	<li>
+	Your use of this site constitutes your agreement to these Terms and Conditions.
+	</li>
+	</h3>
+	<ol>
+	<li>	
+	The following Terms and Conditions apply to the entity doing business with or planning on doing business with The City of New York (the "User"), to any and all of the User's assignees and successors in interest, and to any and all employees, contractors, and any other person or entity authorized to access this site on the User's behalf.
+	</li>
+	<li>
+	The User agrees to use this site only to access information pertaining to the User. The User shall not use this site to access information pertaining to any other business.
+	<li>
+	<li>
+	The User acknowledges that the listing of a "scheduled payment date" on this site does not guarantee payment on said date or subsequently. The User agrees that it has not relied, and will not rely, to its detriment, on a "scheduled payment date" or any other information on this site.
+	</li>
+	<li>
+	The User agrees to indemnify and hold harmless the Department of Finance, the Office of the Comptroller, and all other New York City agencies and their contractors, from any and all damages arising out of the use of this site by the User and by any other users.
+	<li>
+	
+By clicking the "Accept Terms" button, you will be creating a legally binding agreement between your organization and The City of New York.
+</div>	   			
+<%= submit_tag "Accept", :class=>"button-link" %>
+<%= submit_tag "Cancel" , :class=>"button-link" %>			
+	
+<% end %>

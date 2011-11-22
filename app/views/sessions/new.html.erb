@@ -1,0 +1,30 @@
+	<div class="focus">	
+	<div class="focus-inner">	
+	
+		<%= form_for(:session, :url => sessions_path) do |f| %>
+		
+		<%= field_set_tag  do %>
+		<ol>
+		<li>	
+		  <div class="field">
+		    <%= f.label :email %><br />
+		    <%= f.text_field :email %>
+		  </div>
+		</li>
+		<li>
+		  <div class="field">
+		    <%= f.label :password %><br />
+		    <%= f.password_field :password %>
+		  </div>
+		</li>
+		<li class="button-item">	
+		    <%=  submit_tag "Sign in" , :class=>"button green"%>		
+		</li>
+		<ol>
+		<% end %>
+		<% end %>
+		<div class="instruct">
+			<p>New user? <%= link_to "Sign up now!", memorandum_path %></p>
+		</div>
+	</div>
+	</div>		

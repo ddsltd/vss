@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ad_typ: MyString
+  addr1: MyString
+  addr2: MyString
+  state: MyString
+  city: MyString
+  country: MyString
+  state: MyString
+  prim_contact: MyString
+  email: MyString
+  phone: MyString
+
+two:
+  ad_typ: MyString
+  addr1: MyString
+  addr2: MyString
+  state: MyString
+  city: MyString
+  country: MyString
+  state: MyString
+  prim_contact: MyString
+  email: MyString
+  phone: MyString

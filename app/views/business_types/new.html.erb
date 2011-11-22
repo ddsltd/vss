@@ -1,0 +1,26 @@
+<h1>Business Types</h1>
+<%= form_for(@businesstype) do |f| %>
+  <div class="field">
+    <%= f.label :commodity_type, "Business Type" %><br />
+    <%= f.text_field  :commodity_type %><br />
+  </div>
+  <div class="field">
+    <%= f.label :commodity_name, "Business Name" %><br />
+    <%= f.text_field :commodity_name %>
+  </div>
+<div class="field">
+    <%= f.label :desc, "Business Description" %><br />
+    <%= f.text_area :desc %>
+  </div>
+<div class="actions">
+    <table>
+		<tr>
+			<td>				
+  				<%= f.submit "Next" %>	
+			<td>				
+ 				<%= f.submit "Back" %>		
+			</td>	
+		</tr>
+	</table>	
+</div>
+<% end %>

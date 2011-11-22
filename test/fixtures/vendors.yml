@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: MyString
+  lgl_nm: MyString
+  first_nm: MyString
+  last_nm: MyString
+  classification: MyString
+  Tin: MyString
+  Tin_Typ: MyString
+  lgl_addr1: MyString
+  lgl_addr2: MyString
+  state: MyString
+  city: MyString
+  country: MyString
+  zip: MyString
+  primay_acct: false
+  pnt_acct: MyString
+
+two:
+  user: MyString
+  lgl_nm: MyString
+  first_nm: MyString
+  last_nm: MyString
+  classification: MyString
+  Tin: MyString
+  Tin_Typ: MyString
+  lgl_addr1: MyString
+  lgl_addr2: MyString
+  state: MyString
+  city: MyString
+  country: MyString
+  zip: MyString
+  primay_acct: false
+  pnt_acct: MyString

@@ -1,0 +1,15 @@
+<h1>Ordering Address</h1>
+<%= form_for(@address) do |f| %>
+  <%= render 'address/address', :f => f %>
+  <div class="actions">
+    	<table>
+			<tr>
+				<td>				
+	  				<%= f.submit "Next" %>	
+				<td>				
+	 				<%= f.submit "Back" %>		
+				</td>	
+			</tr>
+		</table>	
+  </div>
+<% end %>

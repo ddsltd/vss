@@ -1,0 +1,26 @@
+<h1> Commodities </h1>
+<%= form_tag do -%>
+
+<table>
+	<tr>
+		<th>Commodity Type </th>
+		<th>Commodity Name </th>		
+	</tr>
+<% for commodity in @commodities %>
+<tr>
+	<td> <%=h commodity.commodity_type %></td>
+	<td> <%=h commodity.commodity_name %> </td>
+	<td> <%= link_to "Destroy" , commodity, :confirm=> ' Are you sure?',:method=> :delete %> </td>
+</tr>
+<% end %>
+</table>
+	<p><%= link_to "New Commodity" , new_commodity_path %></p>
+	<p><%= button_to "Next" , :action => "new" %></p>
+<% end %>
+
+
+
+
+		
+
+		

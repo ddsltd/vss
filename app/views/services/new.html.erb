@@ -1,0 +1,26 @@
+<h1>Services</h1>
+<%= form_for(@service) do |f| %>
+  <div class="field">
+    <%= f.label :service_type, "Service Type" %><br />
+    <%= f.text_field  :service_type %><br />
+  </div>
+  <div class="field">
+    <%= f.label :service_name, "Service Name" %><br />
+    <%= f.text_field :service_name %>
+  </div>
+<div class="field">
+    <%= f.label :desc, "Service Name" %><br />
+    <%= f.text_area :desc %>
+  </div>
+<div class="actions">
+    	<table>
+			<tr>
+				<td>				
+	  				<%= f.submit "Next" %>	
+				<td>				
+	 				<%= f.submit "Back" %>		
+				</td>	
+			</tr>
+		</table>	
+  </div>
+<% end %>

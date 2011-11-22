@@ -1,11 +1,48 @@
 Vss::Application.routes.draw do
+  
+  get "business_types/new"
+
+  get "commodities/new"
+
+  get "services/new"
+
+  get "address/new"
+
+  get "vendors/new"
+
+  resources :sessions, :only => [:new, :create, :destroy]
+  resources :users
+  resources :user_mailer
+  resources :vendors
+  resources :addresses
+  resources :services
+  resources :commodities
+  resources :business_types
+   
+  get "sessions/new"
+  get "sessions/memorandum"
   get "pages/about"
-
   get "pages/help"
-
   get "pages/contactus"
-
   get "pages/copyright"
+  get "users/new"
+  post "users/create"
+  get "users/index"
+  get "users/show"
+
+
+
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+  match '/contactus', :to => 'pages#contactus'
+  match '/copyright', :to => 'pages#copyright'
+  match '/home',  :to => 'sessions#new'
+  match '/signup',  :to => 'users#new'
+  match '/memorandum',  :to => 'sessions#memorandum'
+  match 'show', :to=> 'user_mailer/welcome_email'
+  match 'address/payment', :to=> 'addresses#payment'
+  
+  root :to => 'sessions#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
